@@ -1,0 +1,122 @@
+@font-face {
+	font-family: 'Message-section-font';
+	src: url('../../../font/Brownhill-Script.ttf');
+}
+
+@font-face {
+	font-family: 'Message-section-font-Roboto';
+	src: url('../../../font/Roboto-Bold.ttf');
+}
+
+@font-face {
+    font-family: 'Background-font';
+    src: url('../../../font/Montserrat-Bold.ttf');
+}
+
+
+.p-message {
+    display: flex;
+    margin-left: 7%;
+    margin-right: 7%;
+}
+
+.p-message__title {
+    font-family: 'Message-section-font-Roboto';
+}
+
+.p-message__ourMessage {
+    font-size: 120px;
+    width: 700px;
+    height: auto;
+    line-height: 1.1;
+    margin-top: 120px;
+    margin-bottom: auto;
+    font-family: 'Background-font';
+}
+
+.p-message__detail {
+    width: 700px;
+    padding: 20px;
+    padding-bottom: 0;
+    margin-left: auto;
+    position: relative;
+}
+
+.p-message__detail::after {
+    display: block;
+    content: "all of the pointers";
+    width: auto;
+    position: absolute;
+    top: 100%;
+    right: 0;
+    font-size: 90px;
+    rotate: -15deg;
+    opacity: 0.4;
+    font-family: 'Message-section-font';
+    color: red;
+}
+
+.p-message__detail::after .fadeInUp {
+    animation-duration: 1s;
+    animation-timing-function:ease;
+    animation-delay: 0.5s;
+    animation-name: fadeUpAnime;
+    animation-fill-mode: forwards;
+    opacity: 0;
+}
+
+@media screen and (max-width: 1639px) {
+    .p-message__detail::after{
+        width: 200px;
+    }
+}
+
+@media screen and (max-width: 1125px) {
+    .p-message__ourMessage {
+        display: none;
+    }
+
+    .p-message__detail {
+        width: 100%;
+        margin-left: 0;
+    }
+
+    .p-message__detail::after{
+        width: auto;
+    }
+}
+
+@media screen and (max-width: 795px) {
+    .p-message {
+        position: relative;
+    }
+
+    .p-message__ourMessage {
+        position: absolute;
+        top: 100px;
+        display: inline-block;
+        font-weight: bold;
+        letter-spacing: 3px;
+        z-index: -5;
+        font-size: 60px;
+        opacity: 0.08;
+        color: gray;
+        overflow: hidden;
+        width: 100%;
+    }
+
+    .p-message__detail::after {
+        font-size: 60px;
+        top: 105%;
+    }
+}
+
+@media screen and (max-width: 375px) {
+    .p-message__title{
+        font-size: 20px;
+    }
+
+    .p-message__detail::after {
+        font-size: 40px;
+    }
+}

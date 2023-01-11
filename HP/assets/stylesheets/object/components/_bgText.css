@@ -1,0 +1,24 @@
+@font-face {
+	font-family: 'Background-font';
+	src: url('../../../font/Montserrat-Bold.ttf');
+}
+.c-bgText {
+    position: absolute;
+    display: inline-block;
+    font-weight: bold;
+    letter-spacing: 3px;
+    z-index: -5;
+    font-size: 5vw;
+    opacity: 0.1;
+    color: gray;
+    overflow: hidden;
+    font-family: 'Background-font';
+}
+
+@media screen and (max-width: 795px) {
+    .c-bgText {
+        overflow: hidden;
+        width: 100%;
+        text-align: center;
+    }
+}

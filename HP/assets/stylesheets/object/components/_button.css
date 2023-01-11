@@ -1,0 +1,10 @@
+.c-button {
+    width: 150px;
+    height: 40px;
+    font-size: 20px;
+    font-weight: bold;
+    border-radius: 20px;
+    border: none;
+    background-color: rgb(172, 127, 2);
+    color: white;
+}

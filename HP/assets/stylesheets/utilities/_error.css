@@ -1,0 +1,13 @@
+.u-error {
+    font-size: 10px;
+    color: red;
+    display: none;
+}
+
+.p-contact__error:invalid{
+    border: 1px solid red;
+}
+
+.p-contact__error:invalid + .u-error{
+    display: block;
+}

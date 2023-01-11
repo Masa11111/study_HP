@@ -1,0 +1,152 @@
+@font-face {
+	font-family: 'Section-title';
+	src: url('../../../font/Montserrat-Bold.ttf');
+}
+
+.p-header {
+    box-sizing: border-box;
+    width: 100%;
+    max-width: 1640px;
+    height: 100px;
+    padding: 15px 100px;
+    position: fixed;
+    top: 0;
+    z-index: 5;
+    display: flex;
+    justify-content: space-between;
+}
+
+.p-header__logoTitle {
+    display: flex;
+}
+
+.p-header__logo {
+    height: 70px;
+}
+
+.p-header__navItem,
+.p-header__navButton {
+    font-family: 'Section-title';
+    line-height: 2.5;
+}
+
+.p-header__navItem:hover,
+.p-header__navButton:hover{
+    opacity: 0.6;
+}
+
+.p-header__title {
+    margin: auto 0 auto 20px;
+    font-size: 30px;
+    font-weight: lighter;
+    color: rgb(255, 193, 70);
+}
+
+@media screen and (min-width: 1126px) {
+    .p-header__nav {
+        display: flex;
+    }
+    
+    .p-header__nav > ul {
+        padding-left: 0;
+    }
+    
+    .p-header__navItem {
+        font-size: 15px;
+        font-weight: bold;
+        float: left;
+        padding-right: 50px;
+    }
+    
+    .p-header__navButton {
+        margin-top: auto;
+        margin-bottom: auto;
+        font-size: 15px;
+    }
+}
+
+@media screen and (max-width: 1125px) {
+    .p-header {
+        background-color: white;
+        height: 80px;
+        padding: 15px 5%;
+        width: 100%;
+    }
+
+    .p-header__nav {
+        position: fixed;
+        top: 0;
+        right: -90vw;
+        transform: translate(90vw);
+        width: 90vw;
+        height: 100vh;
+        z-index: 999;
+        background-color: rgb(202, 172, 92);
+        color: white;
+        font-size: 1.5rem;
+        transition: all 0.5s;
+    }
+
+    .p-header__nav--action {
+        right: 0;
+        transform: translate(0);
+        transition: all 0.5s;
+    }
+
+    .p-header__nav ul {
+        margin-top: 10vh;
+        margin-left: 40vw;
+    }
+
+    .p-header__navItem {
+        margin-top: 10px;
+    }
+
+    .p-header__navButton {
+        margin-left: 40vw;
+        padding-left: 40px;
+        font-size: 1.5rem;
+        text-align: left;
+        background-color: transparent;
+    }
+
+    .p-header__navClose {
+        width: 70px;
+        height: 70px;
+        border: 1px solid white;
+        border-radius: 50%;
+        margin-top: 40px;
+        margin-left: 46vw;
+        position: relative;
+    }
+
+    .p-header__navClose:hover {
+        opacity: 0.6;
+    }
+
+    .p-header__navClose span{
+        display: inline-block;
+        width: 100%;
+        height: 1px;
+        background-color: white;
+        position: absolute;
+        top: 50%;
+    }
+
+    .p-header__navClose span:nth-child(1) {
+        rotate: 45deg;
+    }    
+    
+    .p-header__navClose span:nth-child(2) {
+        rotate: -45deg;
+    }
+
+    
+    .p-header__logo {
+        height: 50px;
+    }
+    
+    .p-header__title {
+        font-size: 20px;
+    }
+}

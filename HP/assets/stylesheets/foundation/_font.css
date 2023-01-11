@@ -1,0 +1,9 @@
+@font-face {
+	font-family: 'text-font';
+	src: url('../../../font/Montserrat-Bold.ttf');
+}
+
+p {
+    font-family: 'text-font';
+    font-size: 15px;
+}

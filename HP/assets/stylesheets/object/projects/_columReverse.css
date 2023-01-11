@@ -1,0 +1,116 @@
+.p-columReverse {
+    width: 100%;
+    aspect-ratio: 2/1;
+    position: relative;
+}
+
+.p-columReverse__img {
+    width: 50%;
+    position: absolute;
+    right: 0;
+    top: 0;
+}
+
+.p-columReverse__Text {
+    width: 55%;
+    aspect-ratio: 5/3;
+    background-color: rgb(238, 238, 238);
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    box-sizing: border-box;
+    padding: 3vh 7%;
+    z-index: -2;
+}
+
+.p-columReverse__Title {
+    color: rgb(212, 146, 60);
+    margin: 10% 0 0 0;
+    font-size: 25px;
+}
+
+.p-columReverse__Detail {
+    margin: 5% 0 0 0;
+    display: block;
+    font-size: 20px;
+}
+
+@media screen and (max-width: 1125px) {
+    .p-columReverse__Title {
+        font-size: 15px;
+    }
+
+    p.p-columReverse__Detail {
+        font-size: 13px;
+    }
+}
+
+@media screen and (max-width: 795px) {
+    .p-columReverse {
+        width: 100%;
+        aspect-ratio: 1/0.9;
+        position: relative;
+    }
+
+    .p-columReverse__img {
+        width: 95%;
+    }
+
+    .p-columReverse__Text {
+        width: 90%;
+        padding: 29% 7% 0 7%;
+    }
+
+    .p-columReverse__Title {
+        font-size: 20px;
+    }
+
+    .p-columReverse__Detail {
+        font-size: 10px;
+        margin-top: 5px;
+    }
+}
+
+@media screen and (max-width: 1125px) {
+    .p-columReverse__Detail {
+        font-size: 15px;
+    }
+
+    .p-columReverse__Title {
+        margin-top: 5%;
+    }
+}
+
+@media screen and (max-width: 600px) {
+    .p-columReverse__img {
+        width: 100%;
+    }
+
+    .p-columReverse {
+        aspect-ratio: 1/1.2;
+    }
+
+    .p-columReverse__Text {
+        padding: 0 5%;
+    }
+
+    .p-columReverse__Title {
+        font-size: 20px;
+        margin-top: 15%;
+    }
+
+    .p-columReverse__Detail {
+        font-size: 13px;
+        margin-top: 6%;
+    }
+}
+
+@media screen and (max-width: 375px) {
+    .p-columReverse__Title {
+        font-size: 12px;
+    }
+
+    p.p-columReverse__Detail {
+        font-size: 3px;
+    }
+}

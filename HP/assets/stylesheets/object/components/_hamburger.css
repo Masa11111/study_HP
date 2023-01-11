@@ -1,0 +1,43 @@
+.c-hamburger {
+    display: none;
+}
+
+@media screen and (max-width: 1125px) {
+    .c-hamburger {
+        display: block;
+        width: 50px;
+        height: 50px;
+        margin: auto 0;
+        position: relative;
+        border-color: transparent;
+        background-color: transparent;
+        cursor: pointer;
+    }
+
+    .c-hamburger__bar {
+        display: block;
+        height: 2px;
+        position: absolute;
+        background-color: rgb(147, 147, 147);
+    }
+
+    .c-hamburger__bar:nth-child(1) {
+        top: 30%;
+        right: 0;
+        width: 50px;
+    }
+
+    .c-hamburger__bar:nth-child(2) {
+        top: 50%;
+        right: 0;
+        width: 30px;
+        transform: translateY(-50%);
+    }
+
+    .c-hamburger__bar:nth-child(3) {
+        top: 70%;
+        right: 0;
+        width: 40px;
+        transform: translateY(-100%);
+    }
+}

@@ -1,0 +1,21 @@
+.u-bgLine {
+    z-index: -5;
+    position: absolute;
+    background-color: rgb(223, 223, 223);
+    top: 0;
+    width: 1px;
+}
+
+.u-bgLine:nth-child(1) {
+    left: 4%;
+}
+.u-bgLine:nth-child(2) {
+    left: 40%;
+}
+.u-bgLine:nth-child(3) {
+    left: 60%;
+}
+.u-bgLine:nth-child(4) {
+    left: 96%;
+}
+

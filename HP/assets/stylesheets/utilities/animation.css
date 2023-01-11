@@ -1,0 +1,115 @@
+.fadeInRight {
+    animation-duration: 1s;
+    animation-timing-function:cubic-bezier(.79,.01,.41,.59);
+    animation-delay: 0.5s;
+    animation-name: fadeInRightAnime;
+    animation-fill-mode: forwards;
+    opacity: 0;
+}
+
+@keyframes fadeInRightAnime {
+    from {
+        opacity: 0;
+        transform: translateX(10%);
+    }
+
+    to {
+        opacity: 1;
+        transform: translateX(0);
+    }
+}
+
+.fadeInUp {
+    animation-duration: 1s;
+    animation-timing-function:cubic-bezier(.79,.01,.41,.59);
+    animation-delay: 0.5s;
+    animation-name: fadeUpAnime;
+    animation-fill-mode: forwards;
+    opacity: 0;
+}
+
+@keyframes fadeUpAnime {
+    from {
+        opacity: 0;
+        transform: translateY(30%);
+    }
+
+    to {
+        opacity: 1;
+        transform: translateX(0);
+    }
+}
+
+.fadeInLeft {
+    animation-duration: 1s;
+    animation-timing-function:cubic-bezier(.79,.01,.41,.59);
+    animation-delay: 0.5s;
+    animation-name: fadeInLeftAnime;
+    animation-fill-mode: forwards;
+    opacity: 0;
+}
+
+@keyframes fadeInLeftAnime {
+    from {
+        opacity: 0;
+        transform: translateX(-30%);
+    }
+
+    to {
+        opacity: 1;
+        transform: translateX(0);
+    }
+}
+
+.fadeInRight {
+    animation-duration: 1.5s;
+    animation-timing-function:cubic-bezier(.79,.01,.41,.59);
+    animation-delay: 0.5s;
+    animation-name: fadeInRightAnime;
+    animation-fill-mode: forwards;
+    opacity: 0;
+}
+
+@keyframes fadeInRightAnime {
+    from {
+        opacity: 0;
+        transform: translateX(30%);
+    }
+
+    to {
+        opacity: 1;
+        transform: translateX(0);
+    }
+}
+
+.p-service__img__left::after {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 98%;
+    background-color: rgb(102, 101, 101);
+    transition: 1s cubic-bezier(.79,.01,.41,.59);
+}
+
+.slide__view__left::after {
+    transition-delay: 1.2s;
+    transform: translateX(100%);
+}
+
+.p-service__img__right::after {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 98%;
+    background-color: rgb(102, 101, 101);
+    transition: 1s cubic-bezier(.79,.01,.41,.59);
+}
+
+.slide__view__right::after {
+    transition-delay: 1.2s;
+    transform: translateX(-100%);
+}

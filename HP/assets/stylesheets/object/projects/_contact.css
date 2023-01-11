@@ -1,0 +1,160 @@
+@font-face {
+	font-family: 'text-font';
+	src: url('../../../font/Montserrat-Regular.ttf');
+}
+
+label {
+    display: block;
+}
+
+.p-contact {
+    position: relative;
+    padding-left: 20%;
+    padding-right: 20%;
+}
+
+.p-contact__detail {
+    max-width: 450px;
+    display: inline-block;
+    margin-left: 50%;
+    margin-top: 50px;
+    transform: translate(-50%);
+    text-align: center;
+}
+
+.p-contact__bgText {
+    left: 50%;
+    top: 50px;
+    transform: translate(-50%);
+    font-size: 120px;
+}
+
+.p-contact__form {
+    max-width: 500px;
+    margin: 100px auto 100px auto;
+}
+
+.p-contact__item {
+    margin-top: 20px;
+    margin-bottom: 0;
+    font-size: 15px;
+    font-family: 'text-font';
+}
+
+.p-contact__select {
+    width: 300px;
+    padding: 10px;
+    margin-top: 10px;
+    font-size: 15px;
+    border: 1px solid rgb(182, 182, 182);
+    appearance: none;
+}
+
+.p-contact__wrapper {
+    width: fit-content;
+    position: relative;
+}
+
+.p-contact__wrapper::after {
+    content: '';
+    position: absolute;
+    right: 10px;
+    top: 50%;
+    border-top: 10px solid rgb(182, 182, 182);;
+    border-left: 10px solid transparent;
+    border-right: 10px solid transparent;
+}
+
+.p-contact__itemBox {
+    max-width: 400px;
+    width: 80%;
+    height: 35px;
+    margin-top: 10px;
+    border: 1px solid rgb(182, 182, 182);
+}
+
+.p-contact__content {
+    width: 100%;
+    height: 65px;
+    border: 1px solid rgb(182, 182, 182);
+}
+
+.p-contact__required::after {
+    content: '必須';
+    display: inline-block;
+    height: 100%;
+    line-height: 15px;
+    padding: 4px 15px;
+    top: 0;
+    margin-left: 10px;
+    background-color: rgb(207, 10, 10);
+    color: white;
+}
+
+
+.p-contact__item--button {
+    height: 50px;
+    width: 200px;
+    background-color: rgb(201, 40, 15);
+    color: white;
+    border: none;
+    margin-top: 50px;
+    margin-left: 50%;
+    transform: translate(-50%);
+    box-shadow: 0 3px 10px gray;
+    font-family: 'text-font';
+}
+
+.p-contact__item--button:hover {
+    opacity: 0.6;
+}
+
+
+@media screen and (max-width: 795px) {
+
+    .p-contact__select {
+        width: 150px;
+    }
+
+    .p-contact__detail {
+        width: 200px;
+    }
+
+    .p-contact__title {
+        font-size: 30px;
+    }
+
+    .p-contact__item {
+        font-size: 20px;
+    }
+
+    .p-contact__item--button {
+        width: 100%;
+        height: 70px;
+        font-size: 30px;
+    }
+
+    .p-contact__wrapper {
+        width: 50%;
+    }
+
+    .p-contact__select {
+        width: 100%;
+    }
+
+    .p-contact__form {
+        margin-top: 50px;
+    }
+}
+
+@media screen and (max-width: 375px) {
+    .p-contact {
+        padding: 0;
+        margin-left: auto;
+        margin-right: auto;
+    }
+
+    .p-contact__form {
+        width: 280px;
+    }
+}
